@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "cymraeg-english-open-argos-models"
+version = "0.1.0"
+description = ""
+authors = ["Rob B <73846016+roblinksdata@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ctranslate2 = "^4.7.1"
+torch = {version = "^2.10.0+cpu", source = "pytorch"}
+torchvision = {version = "^0.25.0+cpu", source = "pytorch"}
+sacremoses = "^0.1.1"
+stanza = "^1.11.1"
+
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
