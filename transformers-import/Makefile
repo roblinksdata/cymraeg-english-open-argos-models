@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all clean
 
 HUGGING_FACE_TRANSFORMERS_MODEL := techiaith/mt-dspec-legislation-en-cy
 JSON_METADATA_FILES_SOURCE		= $(wildcard argos-package-metadata/*.json)
@@ -35,3 +35,4 @@ en-cy/stanza:
 clean:
 	rm -rf en-cy
 	rm en-cy.zip
+	rm en-cy.argosmodel
